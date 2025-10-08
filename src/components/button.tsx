@@ -18,11 +18,11 @@ export const Button = <T extends ElementType = 'button'>({
   const Component = as || 'button';
 
   const classNames = cn(
-    'flex items-center justify-center w-full h-9 rounded-full text-sm font-normal transition-colors duration-200 cursor-pointer',
+    'flex items-center justify-center w-full h-9 rounded-full text-sm font-normal border border-transparent transition-colors duration-200 cursor-pointer',
     {
-      'bg-accent text-white hover:bg-accent/90': variant === 'accent',
-      'text-white hover:bg-gray': variant === 'transparent',
-      'text-white border border-gray-700 hover:bg-gray': variant === 'outline',
+      'bg-accent text-primary hover:bg-accent/90': variant === 'accent',
+      'text-primary hover:bg-primary/10': variant === 'transparent',
+      'text-primary border-border hover:bg-primary/10': variant === 'outline',
       'h-10': size === 'lg',
     },
     className,
