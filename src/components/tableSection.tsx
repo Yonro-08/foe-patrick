@@ -18,40 +18,42 @@ export const TableSection: FC<Props> = ({
   toggleCompeted,
 }) => {
   return (
-    <section className='flex flex-col border border-gray-400/50'>
-      <div className='grid grid-cols-table border-b border-gray-400/50'>
-        <div>№</div>
-        <div>Строит</div>
-        <div>Задача</div>
-        <div className='w-full h-full' />
-      </div>
-      {citiesData[activeCity].map((item, index) => (
-        <div
-          key={index}
-          className='grid grid-cols-table border-b border-gray-400/50'
-        >
-          <div className='flex items-center justify-center'>{index + 1}</div>
-          <div
-            className={cn('flex items-center', {
-              'opacity-50': item.completed,
-            })}
-          >
-            {item.title}
-          </div>
-          <div></div>
-          <div className='flex items-center justify-center'>
-            <Button
-              variant='transparent'
-              className={cn('w-10 h-10', {
-                'text-accent': item.completed,
-              })}
-              onClick={() => toggleCompeted(item.title)}
-            >
-              <CheckIcon />
-            </Button>
-          </div>
+    <section className='table-wrapper'>
+      <div className='table-section flex flex-col border border-gray-400/50'>
+        <div className='grid grid-cols-table border-b border-gray-400/50'>
+          <div>№</div>
+          <div>Строит</div>
+          <div>Задача</div>
+          <div className='w-full h-full' />
         </div>
-      ))}
+        {citiesData[activeCity].map((item, index) => (
+          <div
+            key={index}
+            className='grid grid-cols-table border-b border-gray-400/50'
+          >
+            <div className='flex items-center justify-center'>{index + 1}</div>
+            <div
+              className={cn('flex items-center', {
+                'opacity-50': item.completed,
+              })}
+            >
+              {item.title}
+            </div>
+            <div></div>
+            <div className='flex items-center justify-center'>
+              <Button
+                variant='transparent'
+                className={cn('w-10 h-10', {
+                  'text-accent': item.completed,
+                })}
+                onClick={() => toggleCompeted(item.title)}
+              >
+                <CheckIcon />
+              </Button>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };

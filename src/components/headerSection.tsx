@@ -15,39 +15,41 @@ export const HeaderSection: FC<Props> = ({
   setResetCity,
 }) => {
   return (
-    <section className='flex justify-between'>
-      <div className='flex gap-5'>
-        <div className='flex gap-4'>
-          {([1, 2, 3] as const).map((cityNumber) => (
-            <Button
-              key={cityNumber}
-              variant={cityNumber === activeCity ? 'accent' : 'outline'}
-              className='w-fit px-4'
-              onClick={() => changeCity(cityNumber)}
-            >
-              Город {cityNumber}
-            </Button>
-          ))}
+    <section className='overflow-auto'>
+      <div className='flex justify-between gap-20'>
+        <div className='flex gap-5'>
+          <div className='flex gap-4'>
+            {([1, 2, 3] as const).map((cityNumber) => (
+              <Button
+                key={cityNumber}
+                variant={cityNumber === activeCity ? 'accent' : 'outline'}
+                className='w-fit px-4 whitespace-nowrap'
+                onClick={() => changeCity(cityNumber)}
+              >
+                Город {cityNumber}
+              </Button>
+            ))}
+          </div>
+
+          <Button
+            variant='outline'
+            onClick={() => setResetCity(activeCity)}
+            className='w-fit px-4 whitespace-nowrap'
+          >
+            Сбросить город
+          </Button>
         </div>
 
         <Button
           variant='outline'
-          onClick={() => setResetCity(activeCity)}
-          className='w-fit px-4'
+          onClick={() => {
+            window.localStorage.removeItem('citiesData');
+          }}
+          className='w-fit px-4 whitespace-nowrap'
         >
-          Сбросить город
+          Сбросить данные хранения
         </Button>
       </div>
-
-      <Button
-        variant='outline'
-        onClick={() => {
-          window.localStorage.removeItem('citiesData');
-        }}
-        className='w-fit px-4'
-      >
-        Сбросить данные хранения
-      </Button>
     </section>
   );
 };

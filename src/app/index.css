@@ -23,6 +23,7 @@ body {
   @apply text-primary bg-bg-primary text-xl;
 
   font-family: 'Exo 2', sans-serif;
+  overflow-x: hidden;
 }
 
 .swiper-slide {
@@ -41,4 +42,15 @@ body {
 
 .grid-cols-table div {
   @apply py-1 px-2 border-r border-border/50;
+}
+
+@media (width < 768px) {
+  .table-wrapper {
+    width: 100%;
+    overflow-y: auto;
+  }
+
+  .table-section {
+    width: 768px;
+  }
 }
