@@ -1,0 +1,24 @@
+{
+  "tabWidth": 2,
+  "singleQuote": true,
+  "semi": true,
+  "bracketSpacing": true,
+  "jsxSingleQuote": true,
+  "endOfLine": "lf",
+  "arrowParens": "always",
+
+  "plugins": ["@ianvs/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "^react(.*)$",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@/app/(.*)$",
+    "^@/features/(.*)$",
+    "^@/shared/(.*)$",
+    "^(?!.*[.]scss$)[./].*$",
+    "",
+    ".scss$"
+  ],
+  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+  "importOrderTypeScriptVersion": "5.0.0"
+}

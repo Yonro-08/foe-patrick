@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@100..900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-primary: #131416;
+  --color-secondary: #1a1b1e;
+  --color-accent: #3c83f6;
+  --color-gray: #25272c;
+  --color-gray-10: #27272a;
+  --animate-pulse: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --color-skeleton: #3a3b3e;
+}
+
+body {
+  @apply text-white bg-primary text-xl;
+
+  font-family: 'Exo 2', sans-serif;
+}
+
+.swiper-slide {
+  width: max-content;
+  height: max-content;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.grid-cols-table {
+  grid-template-columns: 35px 1fr max-content;
+}
+
+.grid-cols-table div {
+  @apply py-1 px-2 border-r border-gray-400/50;
+}
