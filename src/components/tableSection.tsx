@@ -29,7 +29,7 @@ export const TableSection: FC<Props> = ({
         {citiesData[activeCity].map((item, index) => (
           <div
             key={index}
-            className='grid grid-cols-table border-b border-gray-400/50'
+            className='grid grid-cols-table border-b border-gray-400/50 hover:bg-primary/10 transition-colors duration-200'
           >
             <div className='flex items-center justify-center'>{index + 1}</div>
             <div
