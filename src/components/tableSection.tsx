@@ -41,9 +41,14 @@ export const TableSection: FC<Props> = ({
             </div>
             <div className='flex flex-col'>
               {item.tasks.length > 0 &&
-                item.tasks.map((item, index) => (
-                  <span key={index}>
-                    {index + 1}. {item.title}
+                item.tasks.map((elem, index) => (
+                  <span
+                    key={index}
+                    className={cn({
+                      'opacity-50': item.completed,
+                    })}
+                  >
+                    {index + 1}. {elem.title}
                   </span>
                 ))}
             </div>
