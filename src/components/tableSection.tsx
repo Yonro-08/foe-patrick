@@ -23,7 +23,7 @@ export const TableSection: FC<Props> = ({
         <div className='grid grid-cols-table border-b border-gray-400/50'>
           <div>№</div>
           <div>Строит</div>
-          <div>Задача</div>
+          <div>Выполненные Задачи</div>
           <div className='w-full h-full' />
         </div>
         {citiesData[activeCity].map((item, index) => (
@@ -39,7 +39,14 @@ export const TableSection: FC<Props> = ({
             >
               {item.title}
             </div>
-            <div></div>
+            <div className='flex flex-col'>
+              {item.tasks.length > 0 &&
+                item.tasks.map((item, index) => (
+                  <span key={index}>
+                    {index + 1}. {item.title}
+                  </span>
+                ))}
+            </div>
             <div className='flex items-center justify-center'>
               <Button
                 variant='transparent'
