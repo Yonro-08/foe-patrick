@@ -14,6 +14,29 @@ export const HeaderSection: FC<Props> = ({
   changeCity,
   setResetCity,
 }) => {
+  const onShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          url: window.location.href,
+          title: document.title,
+          text: 'Смотри 👀',
+        });
+        return;
+      } catch (err) {
+        console.error(err);
+      }
+    }
+
+    // fallback — к копированию
+    const textarea = document.createElement('textarea');
+    textarea.value = window.location.href;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+  };
+
   return (
     <section className='overflow-auto'>
       <div className='flex justify-between gap-20'>
@@ -37,6 +60,14 @@ export const HeaderSection: FC<Props> = ({
             className='w-fit px-4 whitespace-nowrap'
           >
             Сбросить город
+          </Button>
+
+          <Button
+            variant='outline'
+            onClick={onShare}
+            className='w-fit px-4 whitespace-nowrap'
+          >
+            Поделиться
           </Button>
         </div>
 
