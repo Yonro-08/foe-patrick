@@ -143,10 +143,10 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: `Поднимаем ${TWO_PRODUCTION} до 100 уровня.`,
+      title: `Поднимаем ${ONE_PRODUCTION} до 100 уровня.`,
       tasks: [
         {
-          title: `Улучшите ${TWO_PRODUCTION} до уровня 100`,
+          title: `Улучшите ${ONE_PRODUCTION} до уровня 100`,
         },
       ],
       completed: false,
@@ -495,7 +495,6 @@ export const CITIESDATA = {
       ],
       completed: false,
     },
-
     {
       title: `Поднимаем ${ONE_PRODUCTION} до 100 уровня.`,
       tasks: [
@@ -600,7 +599,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: `Поднимаем ${FOUR_PRODUCTION} до 100 уровня.`,
+      title: `Поднимаем ${THREE_PRODUCTION} до 100 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -620,6 +619,11 @@ export const CITIESDATA = {
           title: `Улучшить ${THREE_PRODUCTION} до уровня 100`,
         },
       ],
+      completed: false,
+    },
+    {
+      title: `Поднимаем ${FIVE_PRODUCTION} до 30 уровня.`,
+      tasks: [],
       completed: false,
     },
     {
@@ -739,7 +743,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: `Строим ${THREE_PRODUCTION} (яблоки). Нанимаем ${THREE_MANAGER} 2го уровня (90 камней)`,
+      title: `Строим ${THREE_PRODUCTION}. Нанимаем ${THREE_MANAGER} 2го уровня (90 камней)`,
       tasks: [
         {
           title: `Произведите 50К ${ONE_PRODUCTION}`,
@@ -766,7 +770,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: `Поднимаем ${FOUR_PRODUCTION} до 5 уровня.`,
+      title: `Поднимаем ${THREE_PRODUCTION} до 5 уровня.`,
       tasks: [
         {
           title: 'Перевезите 3М провизии для пира в повозке',
@@ -783,7 +787,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: `Поднимаем ${FOUR_PRODUCTION} до 25 уровня.`,
+      title: `Поднимаем ${THREE_PRODUCTION} до 25 уровня.`,
       tasks: [
         {
           title: `Улучшите ${THREE_PRODUCTION} до уровня 25`,
@@ -832,7 +836,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: `Поднимаем ${FOUR_PRODUCTION} до 50 уровня.`,
+      title: `Поднимаем ${THREE_PRODUCTION} до 50 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -923,7 +927,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: `Поднимаем ${FOUR_PRODUCTION} до 100 уровня.`,
+      title: `Поднимаем ${THREE_PRODUCTION} до 100 уровня.`,
       tasks: [],
       completed: false,
     },
