@@ -1,8 +1,18 @@
+const ONE_PRODUCTION = 'Фабрика Шляп';
+const TWO_PRODUCTION = 'Фабрика Цветов';
+const THREE_PRODUCTION = 'Фабрика Тортов';
+const FOUR_PRODUCTION = 'Фабрика Напитков';
+const FIVE_PRODUCTION = 'Фабрика Фейерверков';
+const ONE_MANAGER = 'Менеджер Шляп';
+const TWO_MANAGER = 'Менеджер Цветов';
+const THREE_MANAGER = 'Менеджер Тортов';
+const FOUR_MANAGER = 'Менеджер Напитков';
+const FIVE_MANAGER = 'Менеджер Фейерверков';
+
 export const CITIESDATA = {
   1: [
     {
-      title:
-        'Нанимаем Менеджера Специй, Пиршества и Карета - всех до 3-го ур. (340 камней)',
+      title: `Нанимаем ${ONE_MANAGER}, Пиршества и Карета - всех до 3-го ур. (340 камней)`,
       tasks: [
         {
           title: 'Наймите распорядителя',
@@ -15,10 +25,10 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Специй до 25 уровня.',
+      title: `Поднимаем ${ONE_PRODUCTION} до 25 уровня.`,
       tasks: [
         {
-          title: 'Улучшите лавку Специи до 25 уровня',
+          title: `Улучшите ${ONE_PRODUCTION} до 25 уровня`,
         },
         {
           title: 'Улучшите распорядителя пиршества до уровня 3',
@@ -32,11 +42,10 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title:
-        'Строим Соки 1 уровня. Нанимаем Менеджера Соков до 2-го уровня (60 камней)',
+      title: `Строим ${TWO_PRODUCTION} 1 уровня. Нанимаем ${TWO_MANAGER} до 2-го уровня (60 камней)`,
       tasks: [
         {
-          title: 'Постройте лавку соков',
+          title: `Постройте ${TWO_PRODUCTION}`,
         },
       ],
       completed: false,
@@ -47,7 +56,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Соки до 10-го уровня',
+      title: `Поднимаем ${TWO_PRODUCTION} до 10-го уровня`,
       tasks: [],
       completed: false,
     },
@@ -64,22 +73,21 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Соки до 25-го уровня',
+      title: `Поднимаем ${TWO_PRODUCTION} до 25-го уровня`,
       tasks: [],
       completed: false,
     },
     {
-      title:
-        'Строим Ферму яблок 1 уровня. Нанимаем менеджера Фермы яблок 1го уровня (30 камней)',
+      title: `Строим ${THREE_PRODUCTION} 1 уровня. Нанимаем ${THREE_MANAGER} 1го уровня (30 камней)`,
       tasks: [
         {
           title: 'Соберите 1М провизии для пира',
         },
         {
-          title: 'Постройте ферму яблок',
+          title: `Постройте ${THREE_PRODUCTION}`,
         },
         {
-          title: 'Наймите распорядителя для фермы яблок',
+          title: `Наймите ${THREE_MANAGER}`,
         },
       ],
       completed: false,
@@ -90,18 +98,18 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Ферму яблок до 5 уровня.',
+      title: `Поднимаем ${THREE_PRODUCTION} до 5 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Соки до 50 уровня.',
+      title: `Поднимаем ${TWO_PRODUCTION} до 50 уровня.`,
       tasks: [
         {
-          title: 'Улучшите лавку соков до уровня 50',
+          title: `Улучшите ${TWO_PRODUCTION} до уровня 50`,
         },
         {
-          title: 'Улучшите своего торговца напитками до уровня 2',
+          title: `Улучшите своего ${TWO_MANAGER} до уровня 2`,
         },
       ],
       completed: false,
@@ -116,7 +124,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Ферму яблок до 10 уровня.',
+      title: `Поднимаем ${THREE_PRODUCTION} до 10 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -126,7 +134,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Ферму яблок до 25 уровня.',
+      title: `Поднимаем ${THREE_PRODUCTION} до 25 уровня.`,
       tasks: [
         {
           title: 'Перевезите 250М провизии для пира в повозке',
@@ -135,29 +143,28 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Специи до 100 уровня.',
+      title: `Поднимаем ${TWO_PRODUCTION} до 100 уровня.`,
       tasks: [
         {
-          title: 'Улучшите лавку Специи до уровня 100',
+          title: `Улучшите ${TWO_PRODUCTION} до уровня 100`,
         },
       ],
       completed: false,
     },
     {
-      title:
-        'Строим Пекарню. Нанимаем Менеджера Пекарни до 2-го уровня (120 камней).',
+      title: `Строим ${FOUR_PRODUCTION}. Нанимаем ${FOUR_MANAGER} до 2-го уровня (120 камней).`,
       tasks: [
         {
           title: 'Произведите 1В провизии для пира',
         },
         {
-          title: 'Постройте пекарню',
+          title: `Постройте ${FOUR_PRODUCTION}`,
         },
         {
-          title: 'Наймите главного пекаря уровня 2 для пекарни',
+          title: `Наймите ${FOUR_MANAGER} уровня 2 ${FOUR_PRODUCTION}`,
         },
         {
-          title: 'Улучшите торговца специями до уровня 3',
+          title: `Улучшите ${ONE_MANAGER} до уровня 3`,
         },
       ],
       completed: false,
@@ -177,36 +184,35 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пекарню до 5 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 5 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Ферму яблок до 50 уровня.',
+      title: `Поднимаем ${THREE_PRODUCTION} до 50 уровня.`,
       tasks: [
         {
-          title: 'Улучшите ферму до уровня 50',
+          title: `Улучшите ${THREE_PRODUCTION} до уровня 50`,
         },
       ],
       completed: false,
     },
     {
-      title: 'Поднимаем Соки до 100 уровня.',
+      title: `Поднимаем ${TWO_PRODUCTION} до 100 уровня.`,
       tasks: [
         {
-          title: 'Улучшите лавку соков до уровня 100',
+          title: `Улучшите ${TWO_PRODUCTION} до уровня 100`,
         },
       ],
       completed: false,
     },
     {
-      title: 'Поднимаем Пекарню до 10 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 10 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title:
-        'Строим Мясника. Нанимаем Менеджера мясника до 2-го уровня (150 золота).',
+      title: `Строим ${FIVE_PRODUCTION}. Нанимаем ${FIVE_MANAGER} до 2-го уровня (150 золота).`,
       tasks: [
         {
           title: 'Соберите 50В провизии для пира',
@@ -229,19 +235,19 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Мясник до 10 уровня.',
+      title: `Поднимаем ${FIVE_PRODUCTION} до 10 уровня.`,
       tasks: [
         {
           title: 'Перевезите 1Т провизии для пира в повозке',
         },
         {
-          title: 'Наймите менеджера мясника уровня 2',
+          title: `Наймите ${FIVE_MANAGER} уровня 2`,
         },
       ],
       completed: false,
     },
     {
-      title: 'Поднимаем Пекарню до 25 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 25 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -251,7 +257,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Мясник до 15 уровня.',
+      title: `Поднимаем ${FIVE_PRODUCTION} до 15 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -261,24 +267,24 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Мясник до 25 уровня.',
+      title: `Поднимаем ${FIVE_PRODUCTION} до 25 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Ферму (яблоки) до 100 уровня.',
+      title: `Поднимаем ${THREE_PRODUCTION} до 100 уровня.`,
       tasks: [
         {
           title: 'Улучшите здания 150 раз',
         },
         {
-          title: 'Улучшите ферму до уровня 100',
+          title: `Улучшите ${THREE_PRODUCTION} до уровня 100`,
         },
       ],
       completed: false,
     },
     {
-      title: 'Поднимаем Пекарню до 50 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 50 уровня.`,
       tasks: [
         {
           title: 'Произведите 4Т провизии для пира в производственных зданиях',
@@ -292,7 +298,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Мясник до 30 уровня.',
+      title: `Поднимаем ${FIVE_PRODUCTION} до 30 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -308,34 +314,34 @@ export const CITIESDATA = {
           title: 'Сбор 10В от соков',
         },
         {
-          title: 'Улучшите пекарню до уровня 50',
+          title: `Улучшите ${FOUR_PRODUCTION} до уровня 50`,
         },
       ],
       completed: false,
     },
     {
-      title: 'Поднимаем специи до 200 уровня.',
+      title: `Поднимаем ${ONE_PRODUCTION} до 200 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Соки до 160 уровня.',
+      title: `Поднимаем ${TWO_PRODUCTION} до 160 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Ферму (яблоки) до 110 уровня.',
+      title: `Поднимаем ${THREE_PRODUCTION} до 110 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Пекарню до 60 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 60 уровня.`,
       tasks: [
         {
           title: 'Улучшить здания 200 раз',
         },
         {
-          title: 'Улучшите Специи до уровня 200',
+          title: `Улучшите ${ONE_PRODUCTION} до уровня 200`,
         },
       ],
       completed: false,
@@ -351,7 +357,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Мясник до 50 уровня.',
+      title: `Поднимаем ${FIVE_PRODUCTION} до 50 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -363,8 +369,7 @@ export const CITIESDATA = {
   ],
   2: [
     {
-      title:
-        'Берём Менеджеров: Пиршества (3), Карету (3) и Специи (1) - 290 камней.',
+      title: `Берём Менеджеров: Пиршества (3), Карету (3) и ${ONE_MANAGER} (1) - 290 камней.`,
       tasks: [
         {
           title: 'Наймите распорядителя для своего Каретного двора',
@@ -376,7 +381,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем фабрику Специй до 25 уровня.',
+      title: `Поднимаем ${ONE_PRODUCTION} до 25 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -386,11 +391,10 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title:
-        'Строим фабрику Соков 1 уровня. Нанимаем Менеджера Соков до 3-го уровня (120 камней).',
+      title: `Строим ${TWO_PRODUCTION} 1 уровня. Нанимаем ${TWO_MANAGER} до 3-го уровня (120 камней).`,
       tasks: [
         {
-          title: 'Постройте лавку соков',
+          title: `Постройте ${TWO_PRODUCTION}`,
         },
       ],
       completed: false,
@@ -402,13 +406,13 @@ export const CITIESDATA = {
           title: 'Улучшите зал для пиршеств до уровня 10',
         },
         {
-          title: 'Улучшите торговца напитками до уровня 2',
+          title: `Улучшите ${TWO_MANAGER} до уровня 2`,
         },
       ],
       completed: false,
     },
     {
-      title: 'Поднимаем Соки до 10-го уровня.',
+      title: `Поднимаем ${TWO_PRODUCTION} до 10-го уровня.`,
       tasks: [],
       completed: false,
     },
@@ -422,19 +426,18 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Соки до 25-го уровня.',
+      title: `Поднимаем ${TWO_PRODUCTION} до 25-го уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title:
-        'Строим Фабрику Фермы (яблоки) 1 уровня. Нанимаем Менеджера Фермы (яблоки) 1го уровня (30 камней).',
+      title: `Строим ${THREE_PRODUCTION} 1 уровня. Нанимаем ${THREE_MANAGER} 1го уровня (30 камней).`,
       tasks: [
         {
           title: 'Произведите 60К специи в лавке специи',
         },
         {
-          title: 'Постройте ферму яблок',
+          title: `Постройте ${THREE_PRODUCTION}`,
         },
         {
           title: 'Улучшите распорядителя пиршества до уровня 3',
@@ -448,7 +451,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Ферму (яблоки) до 5 уровня.',
+      title: `Поднимаем ${THREE_PRODUCTION} до 5 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -465,7 +468,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Ферму (яблоки) до 10 уровня.',
+      title: `Поднимаем ${THREE_PRODUCTION} до 10 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -475,30 +478,29 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Ферму (яблоки) до 25 уровня.',
+      title: `Поднимаем ${THREE_PRODUCTION} до 25 уровня.`,
       tasks: [
         {
-          title: 'Улучшите ферму до уровня 25',
+          title: `Улучшите ${THREE_PRODUCTION} до уровня 25`,
         },
       ],
       completed: false,
     },
     {
-      title:
-        'Строим Фабрику Пекарни. Нанимаем Менеджера Пекарни до 2-го уровня (120 камней).',
+      title: `Строим ${FOUR_PRODUCTION}. Нанимаем ${FOUR_MANAGER} до 2-го уровня (120 камней).`,
       tasks: [
         {
-          title: 'Наймите главного пекаря уровня 2 в пекарню',
+          title: `Наймите ${FOUR_MANAGER} уровня 2 в ${FOUR_PRODUCTION}`,
         },
       ],
       completed: false,
     },
 
     {
-      title: 'Поднимаем фабрику Специй до 100 уровня.',
+      title: `Поднимаем ${ONE_PRODUCTION} до 100 уровня.`,
       tasks: [
         {
-          title: 'Улучшите лавку Специи до уровня 100',
+          title: `Улучшите ${ONE_PRODUCTION} до уровня 100`,
         },
       ],
       completed: false,
@@ -518,7 +520,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пекарню до 4 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 4 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -532,8 +534,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title:
-        'Строим Фабрику Мясник. Нанимаем Менеджера Мясник до 1-го уровня (50 камней).',
+      title: `Строим ${FIVE_PRODUCTION}. Нанимаем ${FIVE_MANAGER} до 1-го уровня (50 камней).`,
       tasks: [],
       completed: false,
     },
@@ -543,25 +544,25 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем пекарню до 25 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 25 уровня.`,
       tasks: [
         {
-          title: 'Улучшите пекарню до уровня 25',
+          title: `Улучшите ${FOUR_PRODUCTION} до уровня 25`,
         },
       ],
       completed: false,
     },
     {
-      title: 'Поднимаем Соки до 100-го уровня.',
+      title: `Поднимаем ${TWO_PRODUCTION} до 100-го уровня.`,
       tasks: [
         {
-          title: 'Улучшите лавку соков до уровня 100',
+          title: `Улучшите ${TWO_MANAGER} до уровня 100`,
         },
       ],
       completed: false,
     },
     {
-      title: 'Поднимаем мясника до 15 уровня.',
+      title: `Поднимаем ${FIVE_PRODUCTION} до 15 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -577,13 +578,13 @@ export const CITIESDATA = {
           title: 'Соберите 16Т провизии для пира',
         },
         {
-          title: 'Постройте лаву мясных деликатесов',
+          title: `Постройте ${FIVE_PRODUCTION}`,
         },
         {
-          title: 'Улучшите торговца напитками до уровня 3',
+          title: `Улучшите ${TWO_MANAGER} до уровня 3`,
         },
         {
-          title: 'Произведите 5Т буханок хлеба в пекарне',
+          title: `Произведите 5Т ${FOUR_PRODUCTION}`,
         },
       ],
       completed: false,
@@ -594,29 +595,29 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем мясника до 25 уровня.',
+      title: `Поднимаем ${FIVE_PRODUCTION} до 25 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Ферму (яблоки) до 100 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 100 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Специи до 200.',
+      title: `Поднимаем ${ONE_PRODUCTION} до 200.`,
       tasks: [
         {
           title: 'Улучшите здания 150 раз',
         },
         {
-          title: 'Улучшите Специи до уровня 200',
+          title: `Улучшите ${ONE_PRODUCTION} до уровня 200`,
         },
         {
           title: 'Перевезти 32Т провизии для пира в повозке',
         },
         {
-          title: 'Улучшить ферму до уровня 100',
+          title: `Улучшить ${THREE_PRODUCTION} до уровня 100`,
         },
       ],
       completed: false,
@@ -631,10 +632,10 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем мясника до 50 уровня.',
+      title: `Поднимаем ${FIVE_PRODUCTION} до 50 уровня.`,
       tasks: [
         {
-          title: 'Улучшить лавку мясных деликатесов до уровня 50',
+          title: `Улучшить ${FIVE_PRODUCTION} до уровня 50`,
         },
       ],
       completed: false,
@@ -650,17 +651,17 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Соки до 160 уровня.',
+      title: `Поднимаем ${TWO_PRODUCTION} до 160 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Ферму (яблоки) до 110 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 110 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем пекарню до 60 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 60 уровня.`,
       tasks: [
         {
           title: 'Улучшите здание 150 раз',
@@ -676,17 +677,16 @@ export const CITIESDATA = {
   ],
   3: [
     {
-      title:
-        'Нанимаем Менеджеров: Пиршества (4), Карету (3), Специи (1) - 440 камней.',
+      title: `Нанимаем Менеджеров: Пиршества (4), Карету (3), ${ONE_MANAGER} (1) - 440 камней.`,
       tasks: [
         {
-          title: 'Наймите менеджера специи',
+          title: `Наймите ${ONE_MANAGER}`,
         },
       ],
       completed: false,
     },
     {
-      title: 'Поднимаем фабрику Специй до 25 уровня.',
+      title: `Поднимаем ${ONE_PRODUCTION} до 25 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -696,11 +696,10 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title:
-        'Строим фабрику соков 1 уровня. Нанимаем Менеджера Соков до 2-го уровня (60 камней).',
+      title: `Строим ${TWO_PRODUCTION} 1 уровня. Нанимаем ${TWO_MANAGER} до 2-го уровня (60 камней).`,
       tasks: [
         {
-          title: 'Наймите менеджера соков',
+          title: `Наймите ${TWO_MANAGER}`,
         },
       ],
       completed: false,
@@ -715,7 +714,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Соки до 10-го уровня.',
+      title: `Поднимаем ${TWO_PRODUCTION} до 10-го уровня.`,
       tasks: [],
       completed: false,
     },
@@ -725,13 +724,13 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Соки до 25-го уровня.',
+      title: `Поднимаем ${TWO_PRODUCTION} до 25-го уровня.`,
       tasks: [
         {
           title: 'Улучшите здания 50 раз',
         },
         {
-          title: 'Улучшите Соки до уровня 25',
+          title: `Улучшите ${TWO_PRODUCTION} до уровня 25`,
         },
         {
           title: 'Улучшите менеджера Пиршества до уровня 2',
@@ -740,17 +739,16 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title:
-        'Строим Фабрику Фермы (яблоки). Нанимаем Менеджера Фермы (яблоки) 2го уровня (90 камней)',
+      title: `Строим ${THREE_PRODUCTION} (яблоки). Нанимаем ${THREE_MANAGER} 2го уровня (90 камней)`,
       tasks: [
         {
-          title: 'Произведите 50К специи',
+          title: `Произведите 50К ${ONE_PRODUCTION}`,
         },
         {
-          title: 'Улучшить менеджера Соков до уровня 2',
+          title: `Улучшить ${TWO_MANAGER} до уровня 2`,
         },
         {
-          title: 'Постройте ферму',
+          title: `Постройте ${THREE_PRODUCTION}`,
         },
       ],
       completed: false,
@@ -768,13 +766,13 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Ферму (яблоки) до 5 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 5 уровня.`,
       tasks: [
         {
           title: 'Перевезите 3М провизии для пира в повозке',
         },
         {
-          title: 'Наймите менеджера фермы до уровня 2',
+          title: `Наймите ${THREE_MANAGER} до уровня 2`,
         },
       ],
       completed: false,
@@ -785,17 +783,16 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Ферму (яблоки) до 25 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 25 уровня.`,
       tasks: [
         {
-          title: 'Улучшите ферму до уровня 25',
+          title: `Улучшите ${THREE_PRODUCTION} до уровня 25`,
         },
       ],
       completed: false,
     },
     {
-      title:
-        'Строим пекарню. Нанимаем Менеджера Пекарни до 1-го уровня (40 камней).',
+      title: `Строим ${FOUR_PRODUCTION}. Нанимаем ${FOUR_MANAGER} до 1-го уровня (40 камней).`,
       tasks: [
         {
           title: 'Соберите 1В провизии для пира',
@@ -804,13 +801,13 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Специи до 100 уровня.',
+      title: `Поднимаем ${ONE_PRODUCTION} до 100 уровня.`,
       tasks: [
         {
-          title: 'Улучшите специи до уровня 100',
+          title: `Улучшите ${ONE_PRODUCTION} до уровня 100`,
         },
         {
-          title: 'Постройте пекарню',
+          title: `Постройте ${FOUR_PRODUCTION}`,
         },
       ],
       completed: false,
@@ -830,18 +827,17 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем пекарню до 6 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 6 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем ферму (яблоки) до 50 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 50 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title:
-        'Строим мясника. Нанимаем Менеджера Мясник до 1-го уровня (50 камней).',
+      title: `Строим ${FIVE_PRODUCTION}. Нанимаем ${FIVE_MANAGER} до 1-го уровня (50 камней).`,
       tasks: [
         {
           title: 'Произведите 25В продуктов на ферме',
@@ -850,7 +846,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем сок до 100 уровня.',
+      title: `Поднимаем ${TWO_PRODUCTION} до 100 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -860,15 +856,15 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Мясника до 6 уровня.',
+      title: `Поднимаем ${FIVE_PRODUCTION} до 6 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Пекарню до 25 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 25 уровня.`,
       tasks: [
         {
-          title: 'Улучшите пекарню до уровня 25',
+          title: `Улучшите ${FOUR_PRODUCTION} до уровня 25`,
         },
         {
           title: 'Улучшите менеджера Пиршества до уровня 4',
@@ -877,7 +873,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Мясника до 18 уровня.',
+      title: `Поднимаем ${FIVE_PRODUCTION} до 18 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -888,7 +884,7 @@ export const CITIESDATA = {
           title: 'Произведите 3В напитков',
         },
         {
-          title: 'Постройте лавку мясных деликатесов',
+          title: `Постройте ${FIVE_PRODUCTION}`,
         },
         {
           title: 'Улучшите здание 100 раз',
@@ -900,44 +896,44 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Мясника до 25 уровня.',
+      title: `Поднимаем ${FIVE_PRODUCTION} до 25 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Пекарню до 50 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 50 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Соки до 150 уровня.',
+      title: `Поднимаем ${TWO_PRODUCTION} до 150 уровня.`,
       tasks: [
         {
-          title: 'Улучшите Соки до уровня 150',
+          title: `Улучшите ${TWO_PRODUCTION} до уровня 150`,
         },
         {
-          title: 'Улучшите Пекарню до уровня 50',
+          title: `Улучшите ${FOUR_PRODUCTION} до уровня 50`,
         },
       ],
       completed: false,
     },
     {
-      title: 'Поднимаем Мясника до 30 уровня.',
+      title: `Поднимаем ${FIVE_PRODUCTION} до 30 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Ферму (яблоки) до 100 уровня.',
+      title: `Поднимаем ${FOUR_PRODUCTION} до 100 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Специи до 200 уровня.',
+      title: `Поднимаем ${ONE_PRODUCTION} до 200 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Мясник до 50 уровня.',
+      title: `Поднимаем ${FIVE_PRODUCTION} до 50 уровня.`,
       tasks: [],
       completed: false,
     },
@@ -945,16 +941,16 @@ export const CITIESDATA = {
       title: 'Поднимаем Карету до 300 уровня.',
       tasks: [
         {
-          title: 'Поизводство 10Т в мясной лавке',
+          title: `Поизводство 10Т в ${FIVE_PRODUCTION}`,
         },
         {
-          title: 'Улучшите ферму до уровня 100',
+          title: `Улучшите ${THREE_PRODUCTION} до уровня 100`,
         },
         {
-          title: 'Улучшите лавку мясных деликатесов до уровня 50',
+          title: `Улучшите ${FIVE_PRODUCTION} до уровня 50`,
         },
         {
-          title: 'Улучшите Специи до уровня 200',
+          title: `Улучшите ${ONE_PRODUCTION} до уровня 200`,
         },
       ],
       completed: false,
