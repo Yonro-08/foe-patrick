@@ -660,7 +660,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: `Поднимаем ${FOUR_PRODUCTION} до 110 уровня.`,
+      title: `Поднимаем ${THREE_PRODUCTION} до 110 уровня.`,
       tasks: [],
       completed: false,
     },
