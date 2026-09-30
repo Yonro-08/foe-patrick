@@ -1,18 +1,19 @@
-const ONE_PRODUCTION = 'Фабрика Лавки Специи';
-const TWO_PRODUCTION = 'Фабрика Лавки Соков';
-const THREE_PRODUCTION = 'Фабрика Фермы';
-const FOUR_PRODUCTION = 'Фабрика Пекарни';
-const FIVE_PRODUCTION = 'Фабрика Лавки Мясных Деликатесов';
-const ONE_MANAGER = 'Менеджер Лавки Специи';
-const TWO_MANAGER = 'Менеджер Лавки Соков';
-const THREE_MANAGER = 'Менеджер Фермы';
-const FOUR_MANAGER = 'Менеджер Пекарни';
-const FIVE_MANAGER = 'Менеджер Лавки Мясных Деликатесов';
+const ONE_PRODUCTION = 'Лавку специй';
+const TWO_PRODUCTION = 'Лавку соков';
+const THREE_PRODUCTION = 'Ферму';
+const FOUR_PRODUCTION = 'Пекарню';
+const FIVE_PRODUCTION = 'Лавку мясных деликатесов';
+const ONE_MANAGER = 'распорядителя лавки специй';
+const TWO_MANAGER = 'распорядителя лавки соков';
+const THREE_MANAGER = 'распорядителя фермы';
+const FOUR_MANAGER = 'распорядителя пекарни';
+const FIVE_MANAGER = 'распорядителя лавки мясных деликатесов';
 
 export const CITIESDATA = {
   1: [
     {
-      title: `Нанимаем ${ONE_MANAGER}, Пиршества и Карета - всех до 3-го ур. (340 камней)`,
+      title:
+        'Нанимаем распорядителей лавки специй, Зала для пиршеств и Кареты — всех до 3-го уровня (340 камней).',
       tasks: [
         {
           title: 'Наймите распорядителя',
@@ -31,18 +32,18 @@ export const CITIESDATA = {
           title: `Улучшите ${ONE_PRODUCTION} до 25 уровня`,
         },
         {
-          title: 'Улучшите распорядителя пиршества до уровня 3',
+          title: 'Улучшите распорядителя Зала для пиршеств до уровня 3',
         },
       ],
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршество и Карету до 3 уровня',
+      title: 'Поднимаем Зал для пиршеств и Карету до 3 уровня.',
       tasks: [],
       completed: false,
     },
     {
-      title: `Строим ${TWO_PRODUCTION} 1 уровня. Нанимаем ${TWO_MANAGER} до 2-го уровня (60 камней)`,
+      title: `Строим ${TWO_PRODUCTION} 1-го уровня. Нанимаем ${TWO_MANAGER} до 2-го уровня (60 камней).`,
       tasks: [
         {
           title: `Постройте ${TWO_PRODUCTION}`,
@@ -51,17 +52,17 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 10 уровня',
+      title: 'Поднимаем Зал для пиршеств и Карету до 10 уровня.',
       tasks: [],
       completed: false,
     },
     {
-      title: `Поднимаем ${TWO_PRODUCTION} до 10-го уровня`,
+      title: `Поднимаем ${TWO_PRODUCTION} до 10 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 25 уровня',
+      title: 'Поднимаем Зал для пиршеств и Карету до 25 уровня.',
       tasks: [
         {
           title: 'Соберите 50К провизии для пира',
@@ -73,12 +74,12 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: `Поднимаем ${TWO_PRODUCTION} до 25-го уровня`,
+      title: `Поднимаем ${TWO_PRODUCTION} до 25 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: `Строим ${THREE_PRODUCTION} 1 уровня. Нанимаем ${THREE_MANAGER} 1го уровня (30 камней)`,
+      title: `Строим ${THREE_PRODUCTION} 1-го уровня. Нанимаем ${THREE_MANAGER} 1-го уровня (30 камней).`,
       tasks: [
         {
           title: 'Соберите 1М провизии для пира',
@@ -93,7 +94,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 50 уровня',
+      title: 'Поднимаем Зал для пиршеств и Карету до 50 уровня.',
       tasks: [],
       completed: false,
     },
@@ -115,7 +116,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 75 уровня',
+      title: 'Поднимаем Зал для пиршеств и Карету до 75 уровня.',
       tasks: [
         {
           title: 'Улучшите здание 50 раз',
@@ -129,7 +130,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 100 уровня',
+      title: 'Поднимаем Зал для пиршеств и Карету до 100 уровня.',
       tasks: [],
       completed: false,
     },
@@ -161,7 +162,7 @@ export const CITIESDATA = {
           title: `Постройте ${FOUR_PRODUCTION}`,
         },
         {
-          title: `Наймите ${FOUR_MANAGER} уровня 2 ${FOUR_PRODUCTION}`,
+          title: `Наймите ${FOUR_MANAGER} 2-го уровня в пекарне`,
         },
         {
           title: `Улучшите ${ONE_MANAGER} до уровня 3`,
@@ -170,7 +171,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 125 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 125 уровня.',
       tasks: [
         {
           title: 'Улучшите здание 50 раз',
@@ -179,7 +180,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 150 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 150 уровня.',
       tasks: [],
       completed: false,
     },
@@ -221,12 +222,12 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 175 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 175 уровня.',
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 200 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 200 уровня.',
       tasks: [
         {
           title: 'Улучшите здание 100 раз',
@@ -241,7 +242,7 @@ export const CITIESDATA = {
           title: 'Перевезите 1Т провизии для пира в повозке',
         },
         {
-          title: `Наймите ${FIVE_MANAGER} уровня 2`,
+          title: `Наймите ${FIVE_MANAGER} 2-го уровня`,
         },
       ],
       completed: false,
@@ -252,7 +253,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 225 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 225 уровня.',
       tasks: [],
       completed: false,
     },
@@ -262,7 +263,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 250 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 250 уровня.',
       tasks: [],
       completed: false,
     },
@@ -293,7 +294,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества до 275 уровня.',
+      title: 'Поднимаем Зал для пиршеств до 275 уровня.',
       tasks: [],
       completed: false,
     },
@@ -308,10 +309,10 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Ждем 2 часа пока завершиться задача на сбор Соков 10В.',
+      title: 'Ждём 2 часа, пока завершится задача на сбор 10В соков.',
       tasks: [
         {
-          title: 'Сбор 10В от соков',
+          title: 'Соберите 10В соков',
         },
         {
           title: `Улучшите ${FOUR_PRODUCTION} до уровня 50`,
@@ -338,7 +339,7 @@ export const CITIESDATA = {
       title: `Поднимаем ${FOUR_PRODUCTION} до 60 уровня.`,
       tasks: [
         {
-          title: 'Улучшить здания 200 раз',
+          title: 'Улучшите здания 200 раз',
         },
         {
           title: `Улучшите ${ONE_PRODUCTION} до уровня 200`,
@@ -347,7 +348,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества до 300 уровня.',
+      title: 'Поднимаем Зал для пиршеств до 300 уровня.',
       tasks: [],
       completed: false,
     },
@@ -362,20 +363,20 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Ждем 8.4 или 4.2В для следующего города.',
+      title: 'Ждём 8.4 или 4.2В для следующего города.',
       tasks: [],
       completed: false,
     },
   ],
   2: [
     {
-      title: `Берём Менеджеров: Пиршества (3), Карету (3) и ${ONE_MANAGER} (1) - 290 камней.`,
+      title: `Берём распорядителей: Зал для пиршеств (3), Карету (3) и ${ONE_MANAGER} (1) — 290 камней.`,
       tasks: [
         {
           title: 'Наймите распорядителя для своего Каретного двора',
         },
         {
-          title: 'Улучшите кучера до уровня 3',
+          title: 'Улучшите распорядителя Кареты до уровня 3',
         },
       ],
       completed: false,
@@ -386,12 +387,12 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 3 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 3 уровня.',
       tasks: [],
       completed: false,
     },
     {
-      title: `Строим ${TWO_PRODUCTION} 1 уровня. Нанимаем ${TWO_MANAGER} до 3-го уровня (120 камней).`,
+      title: `Строим ${TWO_PRODUCTION} 1-го уровня. Нанимаем ${TWO_MANAGER} до 3-го уровня (120 камней).`,
       tasks: [
         {
           title: `Постройте ${TWO_PRODUCTION}`,
@@ -400,10 +401,10 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 10 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 10 уровня.',
       tasks: [
         {
-          title: 'Улучшите зал для пиршеств до уровня 10',
+          title: 'Улучшите Зал для пиршеств до уровня 10',
         },
         {
           title: `Улучшите ${TWO_MANAGER} до уровня 2`,
@@ -412,12 +413,12 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: `Поднимаем ${TWO_PRODUCTION} до 10-го уровня.`,
+      title: `Поднимаем ${TWO_PRODUCTION} до 10 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 25 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 25 уровня.',
       tasks: [
         {
           title: 'Улучшите здание 50 раз',
@@ -426,27 +427,27 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: `Поднимаем ${TWO_PRODUCTION} до 25-го уровня.`,
+      title: `Поднимаем ${TWO_PRODUCTION} до 25 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: `Строим ${THREE_PRODUCTION} 1 уровня. Нанимаем ${THREE_MANAGER} 1го уровня (30 камней).`,
+      title: `Строим ${THREE_PRODUCTION} 1-го уровня. Нанимаем ${THREE_MANAGER} 1-го уровня (30 камней).`,
       tasks: [
         {
-          title: 'Произведите 60К специи в лавке специи',
+          title: 'Произведите 60К специй в лавке специй',
         },
         {
           title: `Постройте ${THREE_PRODUCTION}`,
         },
         {
-          title: 'Улучшите распорядителя пиршества до уровня 3',
+          title: 'Улучшите распорядителя Зала для пиршеств до уровня 3',
         },
       ],
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 50 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 50 уровня.',
       tasks: [],
       completed: false,
     },
@@ -456,7 +457,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 75 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 75 уровня.',
       tasks: [
         {
           title: 'Перевезите 15М провизии для пира в повозке',
@@ -473,7 +474,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 100 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 100 уровня.',
       tasks: [],
       completed: false,
     },
@@ -490,7 +491,7 @@ export const CITIESDATA = {
       title: `Строим ${FOUR_PRODUCTION}. Нанимаем ${FOUR_MANAGER} до 2-го уровня (120 камней).`,
       tasks: [
         {
-          title: `Наймите ${FOUR_MANAGER} уровня 2 в ${FOUR_PRODUCTION}`,
+          title: `Наймите ${FOUR_MANAGER} 2-го уровня в пекарне`,
         },
       ],
       completed: false,
@@ -505,7 +506,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 125 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 125 уровня.',
       tasks: [
         {
           title: 'Улучшите здание 100 раз',
@@ -514,7 +515,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 150 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 150 уровня.',
       tasks: [],
       completed: false,
     },
@@ -524,7 +525,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Подождать сбор 99В провизии для пира',
+      title: 'Ждём сбор 99В провизии для пира.',
       tasks: [
         {
           title: 'Соберите 99В провизии для пира',
@@ -538,7 +539,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Карету до 200 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 200 уровня.',
       tasks: [],
       completed: false,
     },
@@ -552,10 +553,10 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: `Поднимаем ${TWO_PRODUCTION} до 100-го уровня.`,
+      title: `Поднимаем ${TWO_PRODUCTION} до 100 уровня.`,
       tasks: [
         {
-          title: `Улучшите ${TWO_MANAGER} до уровня 100`,
+          title: `Улучшите ${TWO_PRODUCTION} до уровня 100`,
         },
       ],
       completed: false,
@@ -571,7 +572,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества до 250 уровня.',
+      title: 'Поднимаем Зал для пиршеств до 250 уровня.',
       tasks: [
         {
           title: 'Соберите 16Т провизии для пира',
@@ -583,7 +584,7 @@ export const CITIESDATA = {
           title: `Улучшите ${TWO_MANAGER} до уровня 3`,
         },
         {
-          title: `Произведите 5Т ${FOUR_PRODUCTION}`,
+          title: 'Произведите 5Т в пекарне',
         },
       ],
       completed: false,
@@ -604,7 +605,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: `Поднимаем ${ONE_PRODUCTION} до 200.`,
+      title: `Поднимаем ${ONE_PRODUCTION} до 200 уровня.`,
       tasks: [
         {
           title: 'Улучшите здания 150 раз',
@@ -613,10 +614,10 @@ export const CITIESDATA = {
           title: `Улучшите ${ONE_PRODUCTION} до уровня 200`,
         },
         {
-          title: 'Перевезти 32Т провизии для пира в повозке',
+          title: 'Перевезите 32Т провизии для пира в повозке',
         },
         {
-          title: `Улучшить ${THREE_PRODUCTION} до уровня 100`,
+          title: `Улучшите ${THREE_PRODUCTION} до уровня 100`,
         },
       ],
       completed: false,
@@ -627,7 +628,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества до 290 уровня.',
+      title: 'Поднимаем Зал для пиршеств до 290 уровня.',
       tasks: [
         {
           title: 'Произведите 15Т продуктов на ферме',
@@ -639,13 +640,13 @@ export const CITIESDATA = {
       title: `Поднимаем ${FIVE_PRODUCTION} до 50 уровня.`,
       tasks: [
         {
-          title: `Улучшить ${FIVE_PRODUCTION} до уровня 50`,
+          title: `Улучшите ${FIVE_PRODUCTION} до уровня 50`,
         },
       ],
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества до 300 уровня.',
+      title: 'Поднимаем Зал для пиршеств до 300 уровня.',
       tasks: [],
       completed: false,
     },
@@ -674,14 +675,14 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Ждем 8.4 или 4.2В для следующего города.',
+      title: 'Ждём 8.4 или 4.2В для следующего города.',
       tasks: [],
       completed: false,
     },
   ],
   3: [
     {
-      title: `Нанимаем Менеджеров: Пиршества (4), Карету (3), ${ONE_MANAGER} (1) - 440 камней.`,
+      title: `Нанимаем распорядителей: Зал для пиршеств (4), Карету (3) и ${ONE_MANAGER} (1) — 440 камней.`,
       tasks: [
         {
           title: `Наймите ${ONE_MANAGER}`,
@@ -695,12 +696,12 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Повозку до 3 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 3 уровня.',
       tasks: [],
       completed: false,
     },
     {
-      title: `Строим ${TWO_PRODUCTION} 1 уровня. Нанимаем ${TWO_MANAGER} до 2-го уровня (60 камней).`,
+      title: `Строим ${TWO_PRODUCTION} 1-го уровня. Нанимаем ${TWO_MANAGER} до 2-го уровня (60 камней).`,
       tasks: [
         {
           title: `Наймите ${TWO_MANAGER}`,
@@ -709,7 +710,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Повозку и Пиршества до 10-го уровня.',
+      title: 'Поднимаем Карету и Зал для пиршеств до 10 уровня.',
       tasks: [
         {
           title: 'Улучшите Карету до уровня 10',
@@ -718,17 +719,17 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: `Поднимаем ${TWO_PRODUCTION} до 10-го уровня.`,
+      title: `Поднимаем ${TWO_PRODUCTION} до 10 уровня.`,
       tasks: [],
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Повозка до 25 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 25 уровня.',
       tasks: [],
       completed: false,
     },
     {
-      title: `Поднимаем ${TWO_PRODUCTION} до 25-го уровня.`,
+      title: `Поднимаем ${TWO_PRODUCTION} до 25 уровня.`,
       tasks: [
         {
           title: 'Улучшите здания 50 раз',
@@ -737,19 +738,19 @@ export const CITIESDATA = {
           title: `Улучшите ${TWO_PRODUCTION} до уровня 25`,
         },
         {
-          title: 'Улучшите менеджера Пиршества до уровня 2',
+          title: 'Улучшите распорядителя Зала для пиршеств до уровня 2',
         },
       ],
       completed: false,
     },
     {
-      title: `Строим ${THREE_PRODUCTION}. Нанимаем ${THREE_MANAGER} 2го уровня (90 камней)`,
+      title: `Строим ${THREE_PRODUCTION}. Нанимаем ${THREE_MANAGER} 2-го уровня (90 камней).`,
       tasks: [
         {
-          title: `Произведите 50К ${ONE_PRODUCTION}`,
+          title: 'Произведите 50К специй',
         },
         {
-          title: `Улучшить ${TWO_MANAGER} до уровня 2`,
+          title: `Улучшите ${TWO_MANAGER} до уровня 2`,
         },
         {
           title: `Постройте ${THREE_PRODUCTION}`,
@@ -758,13 +759,13 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Повозка до 50 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 50 уровня.',
       tasks: [
         {
           title: 'Улучшите здания 50 раз',
         },
         {
-          title: 'Улучшите менеджера Кареты до уровня 3',
+          title: 'Улучшите распорядителя Кареты до уровня 3',
         },
       ],
       completed: false,
@@ -776,13 +777,13 @@ export const CITIESDATA = {
           title: 'Перевезите 3М провизии для пира в повозке',
         },
         {
-          title: `Наймите ${THREE_MANAGER} до уровня 2`,
+          title: `Наймите ${THREE_MANAGER} 2-го уровня`,
         },
       ],
       completed: false,
     },
     {
-      title: 'Поднимаем Повозка и Пиршества до 100 уровня.',
+      title: 'Поднимаем Карету и Зал для пиршеств до 100 уровня.',
       tasks: [],
       completed: false,
     },
@@ -826,7 +827,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Повозка до 150 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 150 уровня.',
       tasks: [],
       completed: false,
     },
@@ -855,7 +856,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Повозка до 200 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 200 уровня.',
       tasks: [],
       completed: false,
     },
@@ -871,7 +872,7 @@ export const CITIESDATA = {
           title: `Улучшите ${FOUR_PRODUCTION} до уровня 25`,
         },
         {
-          title: 'Улучшите менеджера Пиршества до уровня 4',
+          title: 'Улучшите распорядителя Зала для пиршеств до уровня 4',
         },
       ],
       completed: false,
@@ -882,7 +883,7 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества и Повозка до 250 уровня.',
+      title: 'Поднимаем Зал для пиршеств и Карету до 250 уровня.',
       tasks: [
         {
           title: 'Произведите 3В напитков',
@@ -945,7 +946,7 @@ export const CITIESDATA = {
       title: 'Поднимаем Карету до 300 уровня.',
       tasks: [
         {
-          title: `Поизводство 10Т в ${FIVE_PRODUCTION}`,
+          title: 'Произведите 10Т в лавке мясных деликатесов',
         },
         {
           title: `Улучшите ${THREE_PRODUCTION} до уровня 100`,
@@ -960,12 +961,12 @@ export const CITIESDATA = {
       completed: false,
     },
     {
-      title: 'Поднимаем Пиршества до 300 уровня.',
+      title: 'Поднимаем Зал для пиршеств до 300 уровня.',
       tasks: [],
       completed: false,
     },
     {
-      title: 'Ждем 8.4 или 4.2В для следующего города.',
+      title: 'Ждём 8.4 или 4.2В для следующего города.',
       tasks: [],
       completed: false,
     },
