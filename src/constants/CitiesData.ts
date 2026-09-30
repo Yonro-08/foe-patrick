@@ -1,13 +1,13 @@
-const ONE_PRODUCTION = 'Фабрика Шляп';
-const TWO_PRODUCTION = 'Фабрика Цветов';
-const THREE_PRODUCTION = 'Фабрика Тортов';
-const FOUR_PRODUCTION = 'Фабрика Напитков';
-const FIVE_PRODUCTION = 'Фабрика Фейерверков';
-const ONE_MANAGER = 'Менеджер Шляп';
-const TWO_MANAGER = 'Менеджер Цветов';
-const THREE_MANAGER = 'Менеджер Тортов';
-const FOUR_MANAGER = 'Менеджер Напитков';
-const FIVE_MANAGER = 'Менеджер Фейерверков';
+const ONE_PRODUCTION = 'Фабрика Лавки Специи';
+const TWO_PRODUCTION = 'Фабрика Лавки Соков';
+const THREE_PRODUCTION = 'Фабрика Фермы';
+const FOUR_PRODUCTION = 'Фабрика Пекарни';
+const FIVE_PRODUCTION = 'Фабрика Лавки Мясных Деликатесов';
+const ONE_MANAGER = 'Менеджер Лавки Специи';
+const TWO_MANAGER = 'Менеджер Лавки Соков';
+const THREE_MANAGER = 'Менеджер Фермы';
+const FOUR_MANAGER = 'Менеджер Пекарни';
+const FIVE_MANAGER = 'Менеджер Лавки Мясных Деликатесов';
 
 export const CITIESDATA = {
   1: [
